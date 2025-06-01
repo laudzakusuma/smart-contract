@@ -6,7 +6,7 @@ describe("HelloWorld", function () {
   beforeEach(async function () {
     const HelloWorld = await ethers.getContractFactory("HelloWorld");
     helloWorld = await HelloWorld.deploy();
-    await helloWorld.deployed();
+
   });
 
   it("should return the default greeting", async function () {
